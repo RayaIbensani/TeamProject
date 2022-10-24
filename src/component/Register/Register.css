@@ -1,0 +1,52 @@
+#Body{
+    justify-content: center;
+    align-items: center ;
+    background-color: rgb(39, 53, 13);
+    }
+    
+    .isiform{
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+    }
+    
+    .formregister{
+      padding: 30px;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .instructions > svg {
+      margin-right: 0.25rem;
+    }
+    
+    .offscreen {
+      position: absolute;
+      left: -9999px;
+    }
+    
+    .hide {
+      display: none;
+    }
+    
+    .valid {
+      color: limegreen;
+      margin-left: 0.25rem;
+    }
+    
+    .invalid {
+      color: red;
+      margin-left: 0.25rem; 
+    }
+    
+    .errmsg {
+      background-color: lightpink;
+      color: firebrick;
+      font-weight: bold;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .line {
+      display: inline-block;
+    }
+    

@@ -1,0 +1,47 @@
+.titleHead{
+    text-align: center;
+    font-family: serif;
+    margin-top: 13%;
+}
+
+span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.subHead{
+    text-align: center;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    color:  rgb(0, 0, 0);
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height:3px;
+    bottom: -3px;
+    left: 0;
+    background-color:  rgb(223, 126, 0);
+    transform-origin: bottom right;
+    transition: transform 0.50s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .background{
+    background-image: url(../../assets/background/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}

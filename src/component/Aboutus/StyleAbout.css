@@ -1,0 +1,133 @@
+.d-block{
+    border-radius: 25px;
+}
+
+@media screen and (min-width: 601px) {
+    .title{
+      font-size: 50px;
+    }
+    .subtitle{
+        font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 1001px) {
+    .title{
+      font-size: 30px;
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 801px) {
+    .title{
+      font-size: 20px;
+    }
+    .subtitle{
+        font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 401px) {
+    .title{
+      font-size: 15px;
+    }
+    .subtitle{
+        font-size: 8px;
+    }
+  }
+
+
+  /* bagian about us */
+.subAbout{
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 770px) {
+    .subAbout {
+        font-size: 10px;
+    }
+    .logo img{
+        display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 1001px) {
+    .subAbout {
+        font-size: 12px;
+    }
+  }
+
+
+/* Our team */
+  
+.radius-15 {
+  border-radius: 15px;
+}
+/* .card {
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-radius: .25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+} */
+
+/* element.style {
+} */
+.list-inline-item:not(:last-child) {
+  margin-right: .5rem;
+}
+.contacts-social a {
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  background: #ffffff;
+  border: 1px solid #eeecec;
+  text-align: center;
+  border-radius: 50%;
+  color: #2b2a2a;
+}
+.bg-facebook {
+  background-color: #3b5998!important;
+}
+.bg-facebook:hover {
+  background-color: #1a005b!important;
+  position: relative;
+  transform: translateY(-5px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-github {
+  background-color: #01192b!important;
+}
+.bg-github:hover {
+  background-color:  #1a005b!important;
+  position: relative;
+  transform: translateY(-5px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-linkedin {
+  background-color: #0976b4!important;
+}
+.bg-linkedin:hover {
+  background-color:  #1a005b!important;
+  position: relative;
+  transform: translateY(-5px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

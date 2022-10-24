@@ -1,0 +1,33 @@
+
+#LoGin{
+    background-color: rgb(39, 53, 13);
+    justify-content: center;
+    align-items: center;
+    padding : 70px
+  }
+  .tittle{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+  .form-input{
+    position: relative;
+  }
+  
+  .form-box button[type="submit"]{
+    margin-top: 10px;
+    cursor: pointer;
+    background: #007bff;
+    color: #fff;
+  }
+  .card-body{
+    padding: 2rem;
+    margin-top: 2rem;
+    min-height: 65%;
+  }
+  .bg-image {
+    height: 100%;
+    background-image: url('https://sampaijauh.com/wp-content/uploads/2021/07/Air-Terjun-Mata-Jitu-di-Sumbawa.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  

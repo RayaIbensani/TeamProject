@@ -1,0 +1,24 @@
+
+.nav-item .nav-link{
+    /* color: rgb(0, 0, 0); */
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.nav-item .nav-link:hover{
+    color: rgb(223, 126, 0);
+    border-radius: 20px;
+}
+
+.container .me-2 {
+    background: rgba(255, 255, 255, 0.311);
+    border: 3px solid white;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.navbarr {
+    background-color: #095266;
+}
