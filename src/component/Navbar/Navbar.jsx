@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './NavStyle.css'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -31,7 +31,7 @@ function NavBar() {
     <>
       <Navbar className='navbarr navbar-dark' expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">NgiungTRVL</Navbar.Brand>
+          <Navbar.Brand Link="#">NgiungTRVL</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -39,21 +39,21 @@ function NavBar() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="/">{context.lang==='en' ? 'Home' : 'Beranda'}</Nav.Link>
+              <Nav.Link Link="/">{context.lang==='en' ? 'Home' : 'Beranda'}</Nav.Link>
               <NavDropdown title={context.lang==='en' ? 'Destination' : 'Destinasi'} id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/sumbawa">Sumbawa Besar</NavDropdown.Item>
-                <NavDropdown.Item href="/ksb">
+                <NavDropdown.Item Link="/sumbawa">Sumbawa Besar</NavDropdown.Item>
+                <NavDropdown.Item Link="/ksb">
                   Sumbawa Barat
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/aboutus">
+              <Nav.Link Link="/aboutus">
               {context.lang==='en' ? 'About' : 'Tentang'}
               </Nav.Link>
               {
                 isLogin ?
                   <Nav.Link onClick={handleLogout}>{context.lang==='en' ? 'Logout' : 'Keluar'}</Nav.Link>
                   :
-                  <Nav.Link href="/login">
+                  <Nav.Link Link="/login">
                     {context.lang==='en' ? 'Login' : 'Masuk'}
                   </Nav.Link>
               }
