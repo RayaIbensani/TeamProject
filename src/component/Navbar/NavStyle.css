@@ -18,7 +18,13 @@
     width: 50%;
     justify-content: flex-end;
 }
+.button{
+    background-color: #095266;
+    border:#095266;
+    color: #f8f8f8;
+    position: center;
+}
 
-.navbarr {
+.navbar {
     background-color: #095266;
 }
