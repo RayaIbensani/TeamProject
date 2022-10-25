@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../Navbar/Navbar';
-// import Form from 'react-bootstrap/Form';
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
@@ -38,31 +38,31 @@ function ConfirmTransaksi() {
                 <div className="col-6">
                   <div className="input-group mb-3">
                     <label className="input-group-text" for="inputGroupSelect01">Nama Pemesan</label>
-                    <input className="form-control" placeholder={get.dataPemesan.user}  />
+                    <input className="form-control" placeholder={get.dataPemesan.user}></input>
                   </div>
                 </div>
                 <div className="col-6 ">
                   <div className="input-group mb-3">
                     <label className="input-group-text" for="inputGroupSelect01">Email Pemesan</label>
-                    <input className="form-control" placeholder={get.dataPemesan.email}  />
+                    <input type="name" className="form-control" id="exampleFormControlInput1" placeholder={get.dataPemesan.email}></input>
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="input-group mb-3">
                     <label className="input-group-text" for="inputGroupSelect01">Tujuan Destinasi</label>
-                    <input className="form-control" placeholder={get.pemenasan.tujuan}  />
+                    <input type="name" className="form-control" id="exampleFormControlInput1" placeholder={get.pemenasan.tujuan}></input>
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="input-group mb-3">
                     <label className="input-group-text" for="inputGroupSelect01">Kota Destinasi</label>
-                    <input className="form-control" placeholder={get.pemenasan.kotaDestinasi}  />
+                    <input type="name" className="form-control" id="exampleFormControlInput1" placeholder={get.pemenasan.kotaDestinasi}></input>
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="input-group mb-3">
                     <label className="input-group-text" for="inputGroupSelect01">No Telpon</label>
-                    <input className="form-control" placeholder={get.dataPemesan.handphone}  />
+                    <input type="number" className="form-control" id="exampleFormControlInput1" placeholder={get.dataPemesan.handphone}></input>
                   </div>
                 </div>
                 <hr/>
