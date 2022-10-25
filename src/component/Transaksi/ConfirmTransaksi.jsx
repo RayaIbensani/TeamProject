@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../Navbar/Navbar';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
@@ -36,34 +36,34 @@ function ConfirmTransaksi() {
             <div className="container" key={get.id}>
               <div className="row" >
                 <div className="col-6">
-                  <Form.Group className="mb-3">
-                    <Form.Label>Nama Pemesan</Form.Label>
-                    <Form.Control placeholder={get.dataPemesan.user} disabled />
-                  </Form.Group>
+                  <div className="input-group mb-3">
+                    <label>Nama Pemesan</label>
+                    <input className="form-control" placeholder={get.dataPemesan.user} disabled />
+                  </div>
                 </div>
                 <div className="col-6 ">
-                  <Form.Group className="mb-3">
-                    <Form.Label>Email Pemesan</Form.Label>
-                    <Form.Control placeholder={get.dataPemesan.email} disabled />
-                  </Form.Group>
+                  <div className="input-group mb-3">
+                    <label>Email Pemesan</label>
+                    <input className="form-control" placeholder={get.dataPemesan.email} disabled />
+                  </div>
                 </div>
                 <div className="col-6">
-                  <Form.Group className="mb-3">
-                    <Form.Label>Tujuan Destinasi</Form.Label>
-                    <Form.Control placeholder={get.pemenasan.tujuan} disabled />
-                  </Form.Group>
+                  <div className="input-group mb-3">
+                    <label>Tujuan Destinasi</label>
+                    <input className="form-control" placeholder={get.pemenasan.tujuan} disabled />
+                  </div>
                 </div>
                 <div className="col-6">
-                  <Form.Group className="mb-3">
-                    <Form.Label>Kota Destinasi</Form.Label>
-                    <Form.Control placeholder={get.pemenasan.kotaDestinasi} disabled />
-                  </Form.Group>
+                  <div className="input-group mb-3">
+                    <label>Kota Destinasi</label>
+                    <input className="form-control" placeholder={get.pemenasan.kotaDestinasi} disabled />
+                  </div>
                 </div>
                 <div className="col-6">
-                  <Form.Group className="mb-3">
-                    <Form.Label>No Telpon</Form.Label>
-                    <Form.Control placeholder={get.dataPemesan.handphone} disabled />
-                  </Form.Group>
+                  <div className="input-group mb-3">
+                    <label>No Telpon</label>
+                    <input className="form-control" placeholder={get.dataPemesan.handphone} disabled />
+                  </div>
                 </div>
                 <hr/>
               </div>
