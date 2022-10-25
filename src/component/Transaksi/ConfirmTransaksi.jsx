@@ -38,7 +38,7 @@ function ConfirmTransaksi() {
                 <div className="col-6">
                   <div className="input-group mb-3">
                     <label className="input-group-text" for="inputGroupSelect01">Nama Pemesan</label>
-                    <input className="form-control" placeholder={get.dataPemesan.user}></input>
+                    <input type="name" className="form-control" placeholder={get.dataPemesan.user}></input>
                   </div>
                 </div>
                 <div className="col-6 ">
