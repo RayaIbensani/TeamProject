@@ -37,32 +37,32 @@ function ConfirmTransaksi() {
               <div className="row" >
                 <div className="col-6">
                   <div className="input-group mb-3">
-                    <label>Nama Pemesan</label>
-                    <input className="form-control" placeholder={get.dataPemesan.user} disabled />
+                    <label className="input-group-text" for="inputGroupSelect01">Nama Pemesan</label>
+                    <input className="form-control" placeholder={get.dataPemesan.user}  />
                   </div>
                 </div>
                 <div className="col-6 ">
                   <div className="input-group mb-3">
-                    <label>Email Pemesan</label>
-                    <input className="form-control" placeholder={get.dataPemesan.email} disabled />
+                    <label className="input-group-text" for="inputGroupSelect01">Email Pemesan</label>
+                    <input className="form-control" placeholder={get.dataPemesan.email}  />
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="input-group mb-3">
-                    <label>Tujuan Destinasi</label>
-                    <input className="form-control" placeholder={get.pemenasan.tujuan} disabled />
+                    <label className="input-group-text" for="inputGroupSelect01">Tujuan Destinasi</label>
+                    <input className="form-control" placeholder={get.pemenasan.tujuan}  />
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="input-group mb-3">
-                    <label>Kota Destinasi</label>
-                    <input className="form-control" placeholder={get.pemenasan.kotaDestinasi} disabled />
+                    <label className="input-group-text" for="inputGroupSelect01">Kota Destinasi</label>
+                    <input className="form-control" placeholder={get.pemenasan.kotaDestinasi}  />
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="input-group mb-3">
-                    <label>No Telpon</label>
-                    <input className="form-control" placeholder={get.dataPemesan.handphone} disabled />
+                    <label className="input-group-text" for="inputGroupSelect01">No Telpon</label>
+                    <input className="form-control" placeholder={get.dataPemesan.handphone}  />
                   </div>
                 </div>
                 <hr/>
