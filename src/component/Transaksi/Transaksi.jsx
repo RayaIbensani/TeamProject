@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import './StyleTransaksi.css'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Form';
 import Navbar from '../Navbar/Navbar';
 import axios from 'axios';
 import { useParams, useLocation, json } from 'react-router-dom'
@@ -292,21 +292,21 @@ function Transaksi() {
               </p>
             </div>
 
-            <Form>
+            <form>
               <fieldset>
                 <h4><strong>Booking</strong></h4>
-                <Form.Group className="mb-3 form-trs">
-                  <Form.Label htmlFor="">Kota Destinasi</Form.Label>
-                  <Form.Select value={destinationSelect} onChange={handleChange}>
-                    <option>Search Your Destination</option>
+                <div className="input-group mb-3 form-trs">
+                  <label className="input-group-text" for="inputGroupSelect01">Kota Destinasi</label>
+                  <select className='form-select' value={destinationSelect} onChange={handleChange}>
+                    <option selected>Search Your Destination</option>
                     <option value={'SumbawaBesar'}>Sumbawa Besar</option>
                     <option value={'SumbawaBarat'}>Sumbawa Barat</option>
-                  </Form.Select>
-                </Form.Group>
+                  </select>
+                </div>
 
-                <Form.Group className="mb-3 form-trs">
-                  <Form.Label htmlFor="">Tujuan Wisata</Form.Label>
-                  <Form.Select id="">
+                <div className="input-group mb-3 form-trs">
+                  <label className="input-group-text" for="inputGroupSelect01">Tujuan Wisata</label>
+                  <select className='form-select'>
                     <option>Daftar Destinasi</option>
 
                     {
@@ -324,20 +324,20 @@ function Transaksi() {
                       )
                       )
                     }
-                  </Form.Select>
-                </Form.Group>
-                <Form.Group className="mb-3 form-trs">
-                  <Form.Label htmlFor="">Your Trip</Form.Label>
-                  <Form.Select value={selectTrip} onChange={handleChange}>
-                    <option>Choose Your Type</option>
+                  </select>
+                </div>
+                <div className="input-group mb-3 form-trs">
+                  <label className="input-group-text" for="inputGroupSelect01">Your Trip</label>
+                  <select className='form-select' value={selectTrip} onChange={handleChange}>
+                    <option selected>Choose Your Type</option>
                     <option value={'adventure'}>Adventure</option>
                     <option value={'camping'}>Camping</option>
-                  </Form.Select>
-                </Form.Group>
-                <Form.Group className="mb-3 form-trs">
-                  <Form.Label htmlFor="">Choose Ticket </Form.Label>
+                  </select>
+                </div>
+                <div className="input-group mb-3 form-trs">
+                  <label className="input-group-text" for="inputGroupSelect01">Choose Ticket </label>
                   <input type="date"></input>
-                </Form.Group>
+                </div>
                 {/* <Button type="submit" onClick={biodata} >CHECKOUT</Button> */}
                 <div className="d-grid gap-2 mt-2">
                   <button onClick={biodata} disabled={!validName || !validEmail || !validAddress || !validHandphone ? true : false}
@@ -346,7 +346,7 @@ function Transaksi() {
                   </button>
                 </div>
               </fieldset>
-            </Form>
+            </form>
           </div>
         </div>
       </div>
